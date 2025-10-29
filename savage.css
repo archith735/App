@@ -1,0 +1,145 @@
+
+body{
+    background-color: black;
+    background-image: url(/seven.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    animation-name: kk;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes kk{
+    0%{
+        background-image: url(/eight.jpg);
+        background-position-y:2px ;
+        background-size: cover;
+    
+    }
+    25%{
+        background-image: url(/second.jpg);
+        background-position-y: 30px;
+        background-size: cover;
+    
+      
+    }
+
+}
+
+.main{display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+/* border: 2px solid rgb(238, 18, 18);*/
+border-radius: 40px; 
+width: 600px;
+height: 400px;
+color: rgb(7, 217, 228);
+position: relative;
+top: 200px;
+left: 450px;
+/* 
+backdrop-filter: blur(15px); */
+background-color: rgba(0, 0, 0, 0.625);
+}
+
+.logo{text-align: center;
+position: relative;
+bottom: 50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: chartreuse;
+
+}
+label{
+    width: 200px;
+    display: block;
+    margin: 3px;
+    color: rgb(235, 235, 239);
+ 
+  
+   
+}
+input{border-radius: 15px;
+     transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffcc;
+    width: 200px;
+    /* padding: 2px; */
+}
+
+input:hover{  background: #554646;
+      border: 2px solid #00ffcc;
+      border-radius: 15px;
+      padding: 2px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.v:hover{background :linear-gradient(rgb(10, 209, 209),#1207e2);
+ transform: scale(1.05);
+    
+      box-shadow: 0 0 15px #00ffcc;}
+form{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    border-style: hidden;
+}
+.v{padding: 5px;
+    position: relative;
+    margin-left: 55px;
+border-radius: 20px;
+width: 100px;
+bottom: 10px;
+}
+/* .g{
+    text-decoration: none;
+    color: rgb(234, 228, 228);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+.back,a{
+  padding: 2px;
+    text-decoration: none;
+  border-radius: 20px;
+  width: 50px;
+  top: 20px;
+
+
+
+}
+
+.back{  position: relative;
+    left: 250px;}
+input{
+    text-align: center;
+}
+.for,a{text-align: center;
+    text-decoration: none;
+    color: rgb(3, 141, 220);
+}
+
+@media(max-height:400px){
+    .main{
+        width: 700px;
+        background-color: azure;
+
+    
+        
+    }
+
+}
+@media(max-width:800px){
+    .main{
+        width: 400px;background-color: blue;
+        position: relative;
+        left: 300px;
+    }
+    .v{
+        margin-bottom: 20px;
+    }
+    .back{
+    margin-right:450px ;
+    }
+  
+}
